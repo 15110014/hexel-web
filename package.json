@@ -1,14 +1,14 @@
 {
-  "name": "lession-webpack",
+  "name": "Hexel Web",
   "version": "1.0.0",
-  "description": "Test Webpack",
+  "description": "Website for us",
   "main": "index.js",
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && webpack",
     "serve": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Hexel Solutions",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0",
