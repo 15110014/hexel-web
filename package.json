@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf dist",
     "build": "npm run clean && webpack",
-    "serve": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "author": "Hexel Solutions",
   "license": "ISC",
