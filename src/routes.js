@@ -1,33 +1,40 @@
 import React from 'react';
 import HomePage from './pages/HomePage/HomePage';
 import NotFoundPage from './pages/NotFoundPage/NotFoundPage';
-import ProductListPage from './pages/ProductListPage/ProductListPage';
-import ProductActionPage from './pages/ProductActionPage/ProductActionPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import ServicesPage from './pages/ServicesPage/Servicespage';
+import ProjectsPage from './pages/ProjectsPage/ProjectsPage';
+import ContactPage from './pages/ContactPage/ContactPage';
 const routes = [
     {
         path: '/',
         exact: true,
-        main:() =><HomePage/>
+        main: () => <HomePage/>
     },
     {
-        path:'/product-list',
-        exact:false,
-        main:()=><ProductListPage/>
+        path: '/about',
+        exact: false,
+        main: () => <AboutPage/>
     },
     {
-        path:'/product/add',
-        exact:false,
-        main:({history})=><ProductActionPage history ={history}/>
+        path: '/services',
+        exact: false,
+        main: () => <ServicesPage/>
     },
     {
-        path:'/product/:id/edit',
-        exact:false,
-        main:({match,history})=><ProductActionPage match={match} history={history}/>
+        path: '/projects',
+        exact: false,
+        main: () => <ProjectsPage/>
+    },
+    {
+        path: '/contact',
+        exact: false,
+        main: () => <ContactPage/>
     },
     {
         path: '/',
         exact: false,
-        main:() =><NotFoundPage/>
+        main: () => <NotFoundPage/>
     }
 ];
 export default routes;

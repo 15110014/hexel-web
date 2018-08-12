@@ -12,6 +12,16 @@ const VENDOR_LIBS = [
     'redux',
     'redux-thunk',
 ]
+const devServer = {
+    port : 4000,
+    open : true,
+    disableHostCheck : true,
+    overlay : true,
+    stats : 'minimal',
+    inline : true,
+    compress : true,
+    contentBase : '/'
+}
 module.exports = {
     entry: {
         bundle : './src/index.js',
@@ -68,5 +78,6 @@ module.exports = {
             template : 'src/index.html'
         })
     ],
-    mode: 'development'
+    mode: 'development',
+    devServer
 }

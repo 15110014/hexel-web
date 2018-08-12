@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Menu from './../Menu/Menu';
+import Header from './../Header/Header';
 import routes from './../../routes';
 import {Switch, Route, BrowserRouter as Router, HashRouter} from 'react-router-dom';
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
         <HashRouter>
             <div>
-                <Menu/>
+                <Header/>
                 <div className="container">
                     <div className="row">
                     { /**/}
